@@ -1,55 +1,84 @@
-# [PROJECT_NAME] Constitution
-<!-- Example: Spec Constitution, TaskFlow Constitution, etc. -->
+<!--
+Sync Impact Report:
+Version change: None -> 1.0.0
+List of modified principles:
+- Atomic Git Operations
+- Content Location and Format
+- Chapter Structure
+- Chatbot Architecture
+- Frontend Color Scheme
+- Chatbot Pre-Chapter Validation
+- Mandatory Git Workflow
+- Self-Correction and Constitution Adherence
+Added sections: All (initial content)
+Removed sections: None
+Templates requiring updates:
+- .specify/templates/plan-template.md (⚠ pending review)
+- .specify/templates/spec-template.md (⚠ pending review)
+- .specify/templates/tasks-template.md (⚠ pending review)
+- .specify/templates/commands/*.md (⚠ pending review)
+- README.md (⚠ pending review)
+Follow-up TODOs:
+- TODO(RATIFICATION_DATE): Original adoption date needs to be determined.
+- TODO(AMENDMENT_APPROVAL_PROCESS): The approval process for amendments needs to be defined.
+- TODO(AMENDMENT_NOTICE_PERIOD): The notice period for amendments needs to be defined.
+- TODO(COMPLIANCE_REVIEW_FREQUENCY): The frequency of compliance reviews needs to be defined.
+-->
+# Physical AI Book – Constitution (December 2025)
 
-## Core Principles
+## Preamble
 
-### [PRINCIPLE_1_NAME]
-<!-- Example: I. Library-First -->
-[PRINCIPLE_1_DESCRIPTION]
-<!-- Example: Every feature starts as a standalone library; Libraries must be self-contained, independently testable, documented; Clear purpose required - no organizational-only libraries -->
+This Constitution outlines the core principles, values, and guidelines that govern the development, maintenance, and evolution of the Physical AI Book project. It serves as a foundational document for all contributors and stakeholders, ensuring alignment and consistency in decision-making.
 
-### [PRINCIPLE_2_NAME]
-<!-- Example: II. CLI Interface -->
-[PRINCIPLE_2_DESCRIPTION]
-<!-- Example: Every library exposes functionality via CLI; Text in/out protocol: stdin/args → stdout, errors → stderr; Support JSON + human-readable formats -->
+## Principles
 
-### [PRINCIPLE_3_NAME]
-<!-- Example: III. Test-First (NON-NEGOTIABLE) -->
-[PRINCIPLE_3_DESCRIPTION]
-<!-- Example: TDD mandatory: Tests written → User approved → Tests fail → Then implement; Red-Green-Refactor cycle strictly enforced -->
+### 1. Atomic Git Operations
+**Non-negotiable Rule:** Files MUST NOT be deleted or renamed without a preceding Git commit.
+**Rationale:** To ensure a clear, traceable history of file management and prevent accidental data loss.
 
-### [PRINCIPLE_4_NAME]
-<!-- Example: IV. Integration Testing -->
-[PRINCIPLE_4_DESCRIPTION]
-<!-- Example: Focus areas requiring integration tests: New library contract tests, Contract changes, Inter-service communication, Shared schemas -->
+### 2. Content Location and Format
+**Non-negotiable Rule:** All book content MUST reside exclusively within the `/content` folder and be formatted as Markdown (`.md`) files.
+**Rationale:** To maintain a consistent and organized project structure, facilitating content management and automated processing.
 
-### [PRINCIPLE_5_NAME]
-<!-- Example: V. Observability, VI. Versioning & Breaking Changes, VII. Simplicity -->
-[PRINCIPLE_5_DESCRIPTION]
-<!-- Example: Text I/O ensures debuggability; Structured logging required; Or: MAJOR.MINOR.BUILD format; Or: Start simple, YAGNI principles -->
+### 3. Chapter Structure
+**Non-negotiable Rule:** Each chapter MUST correspond to exactly one Markdown file, named sequentially (e.g., `01-chapter-title.md`, `02-another-chapter.md`).
+**Rationale:** To enforce a clear and predictable chapter organization, aiding navigation and version control.
 
-### [PRINCIPLE_6_NAME]
+### 4. Chatbot Architecture
+**Non-negotiable Rule:** The chatbot implementation MUST be 100% local, utilizing Jan.ai and Retrieval-Augmented Generation (RAG) exclusively. No external cloud APIs (e.g., Gemini) are permitted for chatbot functionality.
+**Rationale:** To ensure data privacy, minimize external dependencies, and control operational costs, while leveraging local processing capabilities.
 
+### 5. Frontend Color Scheme
+**Non-negotiable Rule:** The frontend's color scheme MUST adhere strictly to dark mode with a blue/green palette.
+**Rationale:** To ensure visual consistency and enhance user experience, aligning with project branding and aesthetic preferences.
 
-[PRINCIPLE__DESCRIPTION]
+### 6. Chatbot Pre-Chapter Validation
+**Non-negotiable Rule:** Prior to adding any new chapter, the chatbot MUST be tested with the question: “Explain the difference between ROS 2 services and actions.” If the chatbot's response is incorrect or slow, the issue MUST be resolved before proceeding with chapter integration.
+**Rationale:** To ensure the chatbot's accuracy and performance remain high, providing a reliable and responsive learning tool for users.
 
-## [SECTION_2_NAME]
-<!-- Example: Additional Constraints, Security Requirements, Performance Standards, etc. -->
+### 7. Mandatory Git Workflow
+**Non-negotiable Rule:** Git is mandatory from day one of development. Every change, no matter how small, MUST be accompanied by a single, clearly messaged commit.
+**Rationale:** To maintain a granular, understandable, and revertible project history, fostering collaboration and simplifying debugging.
 
-[SECTION_2_CONTENT]
-<!-- Example: Technology stack requirements, compliance standards, deployment policies, etc. -->
-
-## [SECTION_3_NAME]
-<!-- Example: Development Workflow, Review Process, Quality Gates, etc. -->
-
-[SECTION_3_CONTENT]
-<!-- Example: Code review requirements, testing gates, deployment approval process, etc. -->
+### 8. Self-Correction and Constitution Adherence
+**Non-negotiable Rule:** In instances of confusion or uncertainty regarding project direction or implementation, contributors MUST pause their work and re-read this Constitution.
+**Rationale:** To reinforce core principles, ensure alignment with project goals, and promote independent problem-solving rooted in established guidelines.
 
 ## Governance
-<!-- Example: Constitution supersedes all other practices; Amendments require documentation, approval, migration plan -->
 
-[GOVERNANCE_RULES]
-<!-- Example: All PRs/reviews must verify compliance; Complexity must be justified; Use [GUIDANCE_FILE] for runtime development guidance -->
+### Amendment Procedure
+This Constitution may be amended by a TODO(AMENDMENT_APPROVAL_PROCESS): The approval process for amendments needs to be defined. of the core project team. Proposed amendments must be circulated to all stakeholders at least TODO(AMENDMENT_NOTICE_PERIOD): The notice period for amendments needs to be defined. prior to a vote.
 
-**Version**: [CONSTITUTION_VERSION] | **Ratified**: [RATIFICATION_DATE] | **Last Amended**: [LAST_AMENDED_DATE]
-<!-- Example: Version: 2.1.1 | Ratified: 2025-06-13 | Last Amended: 2025-07-16 -->
+### Versioning
+The Constitution follows Semantic Versioning.
+- **MAJOR** version increments indicate backward-incompatible changes to core principles or governance.
+- **MINOR** version increments indicate additions of new principles, significant expansions of guidance, or changes to non-core governance.
+- **PATCH** version increments indicate clarifications, wording corrections, typo fixes, or other non-semantic refinements.
+
+### Compliance
+Adherence to this Constitution is mandatory for all contributions. Regular reviews will be conducted TODO(COMPLIANCE_REVIEW_FREQUENCY): The frequency of compliance reviews needs to be defined. to ensure ongoing compliance and relevance.
+
+## Metadata
+- **Ratification Date:** TODO(RATIFICATION_DATE): Original adoption date needs to be determined.
+- **Last Amended Date:** 2025-12-09
+- **Constitution Version:** 1.0.0
