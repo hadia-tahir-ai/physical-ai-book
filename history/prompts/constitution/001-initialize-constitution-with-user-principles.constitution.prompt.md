@@ -8,7 +8,7 @@ model: gemini-1.5-pro
 feature: none
 branch: main
 user: user
-command: sp.constitution , # Physical AI Book – Constitution (December 2025),1. NEVER delete or rename files without a git commit first 2. All book content lives ONLY in the /content folder as .md files 3. One chapter = exactly one markdown file (01-xxx.md, 02-xxx.md …) 4. Chatbot is 100% local → Jan.ai + RAG only (no Gemini, no cloud APIs) 5. Dark mode + blue/green palette is the law 6. Before add any new chapter, test the chatbot with this question: “Explain the difference between ROS 2 services and actions” → If the answer is wrong or slow, fix it first 7. Git is mandatory from day 1 → every change = one commit with clear message 8. If feel confused → stop and read this constitution again follow these 8 rules .
+command: sp.constitution , # Physical AI Book – Constitution (December 2025),1. NEVER delete or rename files without a git commit first 2. All book content lives ONLY in the /content folder as .md files 3. One chapter = exactly one markdown file (01-xxx.md, 02-xxx.md …) 5. Dark mode + blue/green palette is the law 7. Git is mandatory from day 1 → every change = one commit with clear message 8. If feel confused → stop and read this constitution again follow these 8 rules .
 labels: [constitution, principles, setup]
 links:
   spec: null
@@ -23,7 +23,7 @@ null
 
 ## Prompt
 
-# Physical AI Book – Constitution (December 2025),1. NEVER delete or rename files without a git commit first 2. All book content lives ONLY in the /content folder as .md files 3. One chapter = exactly one markdown file (01-xxx.md, 02-xxx.md …) 4. Chatbot is 100% local → Jan.ai + RAG only (no Gemini, no cloud APIs) 5. Dark mode + blue/green palette is the law 6. Before add any new chapter, test the chatbot with this question: “Explain the difference between ROS 2 services and actions”  → If the answer is wrong or slow, fix it first 7. Git is mandatory from day 1 → every change = one commit with clear message 8. If feel confused → stop and read this constitution again   follow these 8 rules .
+# Physical AI Book – Constitution (December 2025),1. NEVER delete or rename files without a git commit first 2. All book content lives ONLY in the /content folder as .md files 3. One chapter = exactly one markdown file (01-xxx.md, 02-xxx.md …) 5. Dark mode + blue/green palette is the law 7. Git is mandatory from day 1 → every change = one commit with clear message 8. If feel confused → stop and read this constitution again   follow these 8 rules .
 
 ## Response snapshot
 

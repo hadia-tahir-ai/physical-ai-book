@@ -1,0 +1,53 @@
+/**
+ * Any CSS rules here will be applied to the entire website.
+ */
+
+/* You can override the default Infima variables here. */
+:root {
+    --ifm-code-font-size: 95%;
+    --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+}
+
+/* For dark mode specifically */
+html[data-theme="dark"] {
+    --ifm-background-color: #2b0000; /* Background */
+    --ifm-code-background-color: #1e1e1e; /* Code block dark background (kept existing) */
+    --ifm-navbar-background-color: #2b0000; /* Background for navbar */
+    --ifm-footer-background-color: #2b0000; /* Background for footer */
+
+    --ifm-color-primary: #f5f5dc; /* Primary text / headings */
+    --ifm-color-primary-dark: #e6e6cc;
+    --ifm-color-primary-darker: #d1d1b3;
+    --ifm-color-primary-darkest: #bdbd99;
+    --ifm-color-primary-light: #ffffff;
+    --ifm-color-primary-lighter: #ffffff;
+    --ifm-color-primary-lightest: #ffffff;
+
+    --ifm-color-secondary: #d3d3d3; /* Secondary / muted text */
+    --ifm-link-color: #e6c88a; /* Accent (soft gold) for links */
+    --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+.hero-button-maroon {
+    background-color: #2b0000;
+    color: #f5f5dc;
+    border-color: #2b0000;
+}
+
+.hero-button-maroon:hover {
+    background-color: #3a0000;
+    color: #f5f5dc;
+    border-color: #3a0000;
+}
+/* 🔴 Force dark active state for DocSearch (FINAL FIX) */
+html[data-theme="dark"] .DocSearch-Hit--active .DocSearch-Hit-content-wrapper {
+    background-color: #333 !important;
+}
+
+/* Text color inside active result */
+html[data-theme="dark"] .DocSearch-Hit--active .DocSearch-Hit-title,
+html[data-theme="dark"] .DocSearch-Hit--active .DocSearch-Hit-content,
+html[data-theme="dark"] .DocSearch-Hit--active .DocSearch-Hit-action,
+html[data-theme="dark"] .DocSearch-Hit--active a {
+    color: #fff !important;
+}

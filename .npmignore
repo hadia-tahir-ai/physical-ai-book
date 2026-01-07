@@ -1,0 +1,11 @@
+# Folders
+docs/
+src/
+static/
+!static/img/
+
+# Files
+.gitignore
+.npmignore
+babel.config.js
+docusaurus.config.js

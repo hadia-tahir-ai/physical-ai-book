@@ -7,7 +7,6 @@ This guide provides basic instructions for setting up and running the developmen
 1.  **Node.js**: Ensure you have Node.js version 18.x or higher installed.
 2.  **npm**: npm is included with Node.js.
 3.  **Git**: The project uses Git for version control.
-4.  **Jan.ai**: You MUST have the Jan.ai desktop application installed and running. The API server must be active on `http://127.0.0.1:1337`.
 
 ## Development Setup
 
@@ -29,11 +28,6 @@ This guide provides basic instructions for setting up and running the developmen
     ```bash
     npm start
     ```
-
-## Running the Full Experience
-
--   The website will be available at `http://localhost:3000`.
--   For the chatbot to function, ensure your Jan.ai application is running in the background. If it's not, the chat widget will display an error message.
 
 ## Building for Production
 

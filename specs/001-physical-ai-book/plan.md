@@ -5,18 +5,18 @@
 
 ## Summary
 
-This plan outlines the technical approach for building the "Physical AI & Humanoid Robotics" interactive digital book. The project will be a static website built with Docusaurus 3. Key features include a forced dark-mode theme with a custom color palette and a floating chat widget that connects to a local Jan.ai instance for RAG-based Q&A.
+This plan outlines the technical approach for building the "Physical AI & Humanoid Robotics" interactive digital book. The project will be a static website built with Docusaurus 3. Key features include a forced dark-mode theme with a custom color palette.
 
 ## Technical Context
 
 **Language/Version**: `JavaScript (ES2020)`
 **Primary Dependencies**: `Docusaurus 3`, `React 18`
-**Storage**: `Markdown Files` for content, `Browser Local Storage` for chat history (session-only).
+**Storage**: `Markdown Files` for content.
 **Testing**: `Jest` (default with Docusaurus) for unit tests.
 **Target Platform**: `Web Browser (Static Site)`
 **Project Type**: `Web application`
-**Performance Goals**: `Chatbot must answer test query in < 3 seconds`. `Page loads should be < 2s`.
-**Constraints**: `100% local chatbot functionality (no cloud APIs)`.
+**Performance Goals**: `Page loads should be < 2s`.
+**Constraints**: `N/A`.
 **Scale/Scope**: `Approx. 15 content pages (13 chapters + intro)`.
 
 ## Constitution Check
@@ -26,9 +26,7 @@ This plan outlines the technical approach for building the "Physical AI & Humano
 - **[PASS]** 1. Atomic Git Operations: All file operations will be committed.
 - **[PASS]** 2. Content Location and Format: All book content will be Markdown files in the `/docs` directory (as per Docusaurus convention, which maps to `/content`).
 - **[PASS]** 3. Chapter Structure: Chapters will be single, sequentially named markdown files.
-- **[PASS]** 4. Chatbot Architecture: The plan explicitly uses a 100% local Jan.ai setup.
 - **[PASS]** 5. Frontend Color Scheme: The plan specifies a dark mode theme with the required palette.
-- **[PASS]** 6. Chatbot Pre-Chapter Validation: The success criteria in the spec and the performance goals here include the chatbot validation test.
 - **[PASS]** 7. Mandatory Git Workflow: All changes will be managed via Git commits.
 - **[PASS]** 8. Self-Correction and Constitution Adherence: This process follows the constitution.
 
@@ -41,11 +39,9 @@ All constitutional gates pass.
 ```text
 specs/001-physical-ai-book/
 ├── plan.md              # This file
-├── research.md          # Research on Docusaurus theming and chat integration
+├── research.md          # Research on Docusaurus theming
 ├── data-model.md        # Describes the file-based content model
 ├── quickstart.md        # Developer setup guide
-├── contracts/           # Documents the consumed Jan.ai API
-│   └── jan-ai-api.md
 └── tasks.md             # To be created by /sp.tasks
 ```
 
@@ -59,10 +55,6 @@ This project follows the standard Docusaurus 3 project structure, which is a sin
 │   ├── 01-why-physical-ai.md
 │   └── ... (12 more chapters)
 ├── src/
-│   ├── components/        # Custom React components (e.g., ChatWidget)
-│   │   └── ChatWidget/
-│   │       ├── index.js
-│   │       └── index.css
 │   ├── css/
 │   │   └── custom.css     # Theme and color customizations
 │   └── pages/             # Custom pages (e.g., index.js)

@@ -1,29 +1,3 @@
-<!--
-Sync Impact Report:
-Version change: None -> 1.0.0
-List of modified principles:
-- Atomic Git Operations
-- Content Location and Format
-- Chapter Structure
-- Chatbot Architecture
-- Frontend Color Scheme
-- Chatbot Pre-Chapter Validation
-- Mandatory Git Workflow
-- Self-Correction and Constitution Adherence
-Added sections: All (initial content)
-Removed sections: None
-Templates requiring updates:
-- .specify/templates/plan-template.md (⚠ pending review)
-- .specify/templates/spec-template.md (⚠ pending review)
-- .specify/templates/tasks-template.md (⚠ pending review)
-- .specify/templates/commands/*.md (⚠ pending review)
-- README.md (⚠ pending review)
-Follow-up TODOs:
-- TODO(RATIFICATION_DATE): Original adoption date needs to be determined.
-- TODO(AMENDMENT_APPROVAL_PROCESS): The approval process for amendments needs to be defined.
-- TODO(AMENDMENT_NOTICE_PERIOD): The notice period for amendments needs to be defined.
-- TODO(COMPLIANCE_REVIEW_FREQUENCY): The frequency of compliance reviews needs to be defined.
--->
 # Physical AI Book – Constitution (December 2025)
 
 ## Preamble
@@ -44,17 +18,9 @@ This Constitution outlines the core principles, values, and guidelines that gove
 **Non-negotiable Rule:** Each chapter MUST correspond to exactly one Markdown file, named sequentially (e.g., `01-chapter-title.md`, `02-another-chapter.md`).
 **Rationale:** To enforce a clear and predictable chapter organization, aiding navigation and version control.
 
-### 4. Chatbot Architecture
-**Non-negotiable Rule:** The chatbot implementation MUST be 100% local, utilizing Jan.ai and Retrieval-Augmented Generation (RAG) exclusively. No external cloud APIs (e.g., Gemini) are permitted for chatbot functionality.
-**Rationale:** To ensure data privacy, minimize external dependencies, and control operational costs, while leveraging local processing capabilities.
-
 ### 5. Frontend Color Scheme
 **Non-negotiable Rule:** The frontend's color scheme MUST adhere strictly to dark mode with a blue/green palette.
 **Rationale:** To ensure visual consistency and enhance user experience, aligning with project branding and aesthetic preferences.
-
-### 6. Chatbot Pre-Chapter Validation
-**Non-negotiable Rule:** Prior to adding any new chapter, the chatbot MUST be tested with the question: “Explain the difference between ROS 2 services and actions.” If the chatbot's response is incorrect or slow, the issue MUST be resolved before proceeding with chapter integration.
-**Rationale:** To ensure the chatbot's accuracy and performance remain high, providing a reliable and responsive learning tool for users.
 
 ### 7. Mandatory Git Workflow
 **Non-negotiable Rule:** Git is mandatory from day one of development. Every change, no matter how small, MUST be accompanied by a single, clearly messaged commit.
@@ -63,6 +29,14 @@ This Constitution outlines the core principles, values, and guidelines that gove
 ### 8. Self-Correction and Constitution Adherence
 **Non-negotiable Rule:** In instances of confusion or uncertainty regarding project direction or implementation, contributors MUST pause their work and re-read this Constitution.
 **Rationale:** To reinforce core principles, ensure alignment with project goals, and promote independent problem-solving rooted in established guidelines.
+
+### 9. Local Search Functionality
+**Non-negotiable Rule:** The book must provide a local search functionality to allow users to easily search the book's content.
+**Rationale:** To enhance user experience by providing a quick and efficient way to find information within the book.
+
+### 10. Multilingual Support
+**Non-negotiable Rule:** The book must support multiple languages, with English as the default and Urdu as the first additional language.
+**Rationale:** To make the book accessible to a wider audience.
 
 ## Governance
 
