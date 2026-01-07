@@ -4,4 +4,4 @@ This is a book about Physical AI. It covers the foundations of embodied AI, Robo
 
 ## Website
 
-You can access the book online at [https://physical-ai-book.github.io/](https://physical-ai-book.github.io/).
+
